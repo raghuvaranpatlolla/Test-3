@@ -82,8 +82,25 @@ button {
 button:hover {
   transform: scale(1.2);
 }
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #c111e4; 
+    animation: slide 2s infinite; 
+}
 </style>
 <body>
+    <!-- Create a list of links styled differently for hover and active states. -->
     <ul>
         <li><a href="#">Link 1</a></li>
         <li><a href="#">Link 2</a></li>
@@ -92,32 +109,44 @@ button:hover {
         <li><a href="#">Link 5</a></li>
       </ul>
       <br><br><br><br><br>
+      <!--  Create a simple webpage with a title and a paragraph of text. -->
       <h1>Welcome to My Webpage</h1>
             <p>This is a simple webpage with a title and a paragraph of text. 
             The paragraph is styled with a larger font size and justified alignment.
         </p>
         <b></b><b></b><b></b><b></b><b></b>
+        <!-- Create a card with a border, padding, and margin. -->
         <div class="card">
             Marc Marquez's Repsol Honda MotoGP team bike, where 93 is his race number. 
             Marquez is a Spanish MotoGP racer who was born on February 17, 1993.
         </div>
         <b></b><b></b><b></b><b></b><b></b>
+        <!-- Create a responsive navigation bar with three links. -->
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
         <br><br><br><br><br>
+        <!-- Create a 2x2 grid layout for a photo gallery. -->
         <div class="gallery">
             <img src="img1.jpg" alt="Image 1" height="150px" width="300">
             <img src="img2.jpg" alt="Image 2" height="150px" width="300">
             <img src="img3.jpg" alt="Image 3" height="150px" width="300">
             <img src="img4.webp" alt="Image 4"height="150px" width="300">
         </div>
+        <!-- Create a button that changes color when hovered over. -->
         <br><br><br><br><br>
         <button>Click Me</button>
+        <!-- Create a button that scales when hovered over. -->
         <br><br><br><br><br>
         <button>Hover Me</button>
-
+        <br><br><br><br>
+        <!-- Create a box that moves from left to right on the page. -->
+        <div class="box"></div>
+        <br><br><br><br><br>
+        <!-- Create an overlapping layout with two boxes. -->
+        <div class="box1"></div>
+        <div class="box2"></div>
 </body>
 </html>
