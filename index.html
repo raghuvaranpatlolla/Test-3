@@ -34,6 +34,42 @@ p {
   margin: 10px;
   max-width: 300px;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
 </style>
 <body>
     <ul>
@@ -52,5 +88,17 @@ p {
             Marc Marquez's Repsol Honda MotoGP team bike, where 93 is his race number. 
             Marquez is a Spanish MotoGP racer who was born on February 17, 1993.
         </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="gallery">
+            <img src="img1.jpg" alt="Image 1" height="150px" width="300">
+            <img src="img2.jpg" alt="Image 2" height="150px" width="300">
+            <img src="img3.jpg" alt="Image 3" height="150px" width="300">
+            <img src="img4.webp" alt="Image 4"height="150px" width="300">
+        </div>
+        <button>Click Me</button>
 </body>
 </html>
